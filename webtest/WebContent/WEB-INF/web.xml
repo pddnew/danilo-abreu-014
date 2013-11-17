@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>webtest</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description>show person data</description>
+    <display-name>person.do</display-name>
+    <servlet-name>person.do</servlet-name>
+    <servlet-class>edu.pddnew.test.servlet.PersonServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>person.do</servlet-name>
+    <url-pattern>/person.do</url-pattern>
+  </servlet-mapping>
+  <context-param>
+    <param-name>javax.servlet.jsp.jstl.fmt.LocalizationContext</param-name>
+    <param-value>edu.pddnew.test.messages.messages</param-value>
+  </context-param>
+  <servlet>
+    <description>Change Locale language's  application</description>
+    <display-name>lang.do</display-name>
+    <servlet-name>lang.do</servlet-name>
+    <servlet-class>edu.pddnew.test.servlet.ChangeLanguage</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>lang.do</servlet-name>
+    <url-pattern>/lang.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>Servlet to provide some aging examples with jodatime</description>
+    <display-name>aging.do</display-name>
+    <servlet-name>aging.do</servlet-name>
+    <servlet-class>edu.pddnew.test.servlet.AgingServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>aging.do</servlet-name>
+    <url-pattern>/aging.do</url-pattern>
+  </servlet-mapping>
+</web-app>
