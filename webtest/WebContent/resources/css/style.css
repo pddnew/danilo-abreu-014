@@ -1,0 +1,24 @@
+@CHARSET "UTF-8";
+body{
+	font-family: Lato, Arial, sans-serif;
+	font-weight: lighter;
+}
+#menu ul{
+	padding:0px;
+	margin:0px;
+	background-color: #EDEDED;
+	list-style: none;
+}
+
+ul li { display:inline; padding: 10px;}
+ul li:hover { background: gray; opacity: 0.68; color: black;}
+#menu ul li a:hover{ color: red;}
+
+#userData{ height: 40px;}
+
+#errorMsg{
+	border: 1px solid black;
+	position: absolute;
+	color: red;
+	background-color: white;
+}
