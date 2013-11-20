@@ -23,3 +23,9 @@ $(document).ready(function(){
 		});
 	}, 10000);
 });
+
+$(document).ready(function(){
+	$('#aging').html('<center><img src="resources/img/ajax-loading.gif"></center>');
+	$('#aging').css({'background-color':'#222', opacity:0.1});
+	$('#aging').animate({backgroundColor:'#fff', opacity:1.0 }, 20000);
+});
