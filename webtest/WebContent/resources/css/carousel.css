@@ -16,6 +16,9 @@ border: 1px solid black;
     list-style: none;
     float:  left;
 }
+
+#carousel ul li:hover { cursor:move;}
+
 #carousel ul li.red div.ticketDetail{
 	height: 286px;
     border-bottom:10px solid rgb(247,0,0);
