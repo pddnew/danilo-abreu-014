@@ -15,11 +15,13 @@
 <script type="text/javascript" src="resources/js/webtest.js"></script>
 <script type="text/javascript" src="resources/js/carousel.js"></script>
 <script type="text/javascript" src="resources/js/aging.js"></script>
+<script type="text/javascript" src="resources/js/loadeffects.js"></script>
+
 <title></title>
 </head>
 <body>
 <fmt:setBundle basename="edu.pddnew.test.messages.messages"/>
-
+<div id="mask"><div id="loader"></div></div>
 <div id="menu">
 <ul>
 	<li><a href="lang.do?lang=en_US"><fmt:message key="lang.english"/> </a></li>
