@@ -7,8 +7,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+<!-- <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script> -->
+<script src="resources/jquery/jquery.min.js"></script>
+<script src="resources/jquery/jquery-ui.js"></script>
 <link href="resources/css/style.css" rel="stylesheet" type="text/css">
 <link href="resources/css/carousel.css" rel="stylesheet" type="text/css">
 <link href="resources/css/aging.css" rel="stylesheet" type="text/css">
@@ -21,7 +23,8 @@
 </head>
 <body>
 <fmt:setBundle basename="edu.pddnew.test.messages.messages"/>
-<div id="mask"><div id="loader"></div></div>
+<div id="mask"></div>
+<div id="loader"></div>
 <div id="menu">
 <ul>
 	<li><a href="lang.do?lang=en_US"><fmt:message key="lang.english"/> </a></li>
