@@ -20,7 +20,7 @@ border: 1px solid black;
 #carousel ul li:hover { 
 	cursor:move; 
 	opacity: 0.6; 
-	filter:alpha(opacity=60); /*For IE8 and earlier */
+	filter: alpha(opacity=60); /*For IE8 and earlier */
 }
 
 #carousel ul li.red div.ticketDetail{
