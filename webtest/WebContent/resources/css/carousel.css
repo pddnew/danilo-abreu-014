@@ -17,7 +17,11 @@ border: 1px solid black;
     float:  left;
 }
 
-#carousel ul li:hover { cursor:move;}
+#carousel ul li:hover { 
+	cursor:move; 
+	opacity: 0.6; 
+	filter:alpha(opacity=60); /*For IE8 and earlier */
+}
 
 #carousel ul li.red div.ticketDetail{
 	height: 286px;
